@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url('img/a-sunset.jpg');
+    /* background-color: #161623; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* body::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00 , #f0f);
+    clip-path: circle(17% at 8% 9%);
+}
+
+body::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3 , #e91e63);
+    clip-path: circle(15% at 95% 90%);
+} */
+
+h2
+{
+    text-align: center;
+}
+#search_city
+{
+    background-color: rgba(255 , 255 , 255 ,0.1);
+    min-height: 200px;
+    width: 420px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 50px 50px; */
+    margin: 50px auto;
+    padding: 30px;
+
+    /* for glass morphisms */
+    /* box-shadow:  20px 20px 20px rgba(0, 0, 0, 0.5); */
+    backdrop-filter: blur(05px);
+    box-shadow:  10px 10px 10px rgb(238, 124, 18);
+    border-top: 4px solid rgba(255, 255, 255, 0.5);
+    border-left: 4px solid rgba(255, 255, 255, 0.5);
+
+}
+
+input
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(158, 146, 146);
+    background-color: rgb(221, 208, 208);
+    padding: 10px;
+    text-align: center;
+}
+
+.submit_btn
+{
+    margin: 20px;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgb(221, 208, 208);
+}
+
+.Wheater_detail{
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(221, 208, 208);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.location
+{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 15px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: cursive;
+}
+
+.date , .time
+{
+    font-size: 1.2rem;
+    margin: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.temperature h1
+{
+    text-shadow: 2px 2px rgb(185, 162, 119);
+    margin: 5px;
+}
+
+.max_min , .humidity , .type ,.position
+{
+    font-size: 1.0rem;
+    text-align: center;
+    margin: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

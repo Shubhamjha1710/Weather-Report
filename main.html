@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="search_city">
+        <input type="text" placeholder="Enter City Name" id="search_bar">
+        <button class="submit_btn">Submit</button>
+
+        <div class="Wheater_detail" style="display: none;">
+            <div class="location">Delhi , India</div>
+            <div class="position"></div>
+            <div class="date">Sat Nov 13 2021</div>
+            <div class="time">1:15:30 PM</div>
+            <div class="temperature">
+                <h1>33&degC;</h1>
+            </div>
+            <div class="max_min">32&degC(max) / 34&degC(min)</div>
+            <div class="humidity">Humidity:12</div>
+            <div class="type">Clear</div>
+        </div>
+    </div>
+
+
+
+
+    <script src="wheater.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelector("#search_city"), {
+            max: 25,
+            speed: 400
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll("#search_city"));
+    </script>
+</body>
+
+</html>
