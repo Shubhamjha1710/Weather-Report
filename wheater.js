@@ -31,7 +31,7 @@ function searching() {
             console.log(res);
             return res.json()
         }).then((data) => {
-
+              
             var details = data; 
             console.log(data);
             new_whether_report.innerHTML = `
