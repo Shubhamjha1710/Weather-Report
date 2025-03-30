@@ -1,2 +1,11 @@
 name: Deploy On Live
 on: workflow_dispatch
+
+jobs: 
+  initialJob:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print Goodby
+        run: echo "Done - By!" 
