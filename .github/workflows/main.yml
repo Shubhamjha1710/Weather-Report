@@ -1,0 +1,23 @@
+name: MultiJobWorkflow
+on: workflow_dispatch
+jobs:
+  moduleInstallation:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: SetUp node module
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 18
+      - name: Install dependencies
+        run: npm help
+      - name: Module Installation Job Complete
+        run: echo "Module Installation Done"  
+  deploy:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Build project
+        run: npm --version
+      - name: Deploy
+        run: echo "Deploying!!!!"  
