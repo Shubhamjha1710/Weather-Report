@@ -11,6 +11,6 @@ jobs:
         with: 
           node-version: 18
       - name: Install dependencies
-        run: npm ci
+        run: npm help
       - name: Job checkout
         run: echo "Done - By!"  
